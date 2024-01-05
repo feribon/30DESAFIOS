@@ -5,8 +5,6 @@ function media(...dados) {
   }
   return soma / dados.length;
 }
-// add essa linha na branch teste
-// outra linha
 console.log(media(10, 9, 6, 8, 9, 1, 5, 7));
 console.log(media(2, 5, 7, 1, -2));
 console.log(media(10, 10, 10, 10, 9));
