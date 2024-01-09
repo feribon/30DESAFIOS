@@ -1,3 +1,4 @@
+//media simples
 function media(...dados) {
   let soma = 0;
   for (let i in dados) {

@@ -1,3 +1,4 @@
+//inverter o array sem modificar o original
 function reverse(arr) {
   let invertido = [];
   for (let i = arr.length - 1; i >= 0; i--) {

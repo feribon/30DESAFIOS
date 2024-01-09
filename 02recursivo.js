@@ -1,3 +1,4 @@
+//o valor é o numero de vezes q a palavra chunk vai ser escrita
 function recursiva(numero) {
   if (numero === 0) {
     return "";
