@@ -3,9 +3,9 @@ function entrada(str) {
   let obj = {};
   for (let i = 0; i < str.length; i++) {
     if (!obj[str[i]]) {
-      obj[str.charAt(i)] = 1;
+      obj[str[i]] = 1;
     } else {
-      obj[str.charAt(i)]++;
+      obj[str[i]]++;
     }
   }
   return todosIguais(Object.values(obj));
