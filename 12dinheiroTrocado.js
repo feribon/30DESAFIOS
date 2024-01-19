@@ -15,7 +15,7 @@ function entrada(valor) {
   valor -= obj[1] * 1;
   return obj;
 }
-console.log(entrada(478));
-console.log(entrada(384));
-console.log(entrada(5412));
-console.log(entrada(50));
+console.table(entrada(478));
+console.table(entrada(384));
+console.table(entrada(5412));
+console.table(entrada(50));
