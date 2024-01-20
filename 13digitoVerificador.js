@@ -17,11 +17,6 @@ function entrada(valor) {
   let soma = somaPAr * 3 + somaImPar;
   let resto = soma % 10;
   return (resto == 0 && digito == 0) || digito == 10 - resto ? true : false;
-  // if ((resto == 0 && digito == 0) || digito == 10 - resto) {
-  //   return true;
-  // } else {
-  //   return false;
-  // }
 }
 
 console.log(entrada(547020743789));
