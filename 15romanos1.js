@@ -4,19 +4,18 @@ function entrada(dados) {
   let arr = dados.split("");
   let arabico = arr.map((item) => obj[item]);
   let soma = 0;
-  let temp = 0;
-  for (i = arabico.length - 1; i >= 0; i--) {
-    if (arabico[i] <= arabico[i - 1] || arabico[i] == undefined) {
-      soma += arabico[i];
-      console.log(`soma ${soma}`);
+
+  return arabico.reduceRight((acc, atual, idx, arr) => {
+    console.log(`atual: ${atual} arr[idx+1]:${arr[idx+1]}`)
+    if (atual < arr[idx + 1]) {
+      return acc - atual;
     } else {
-      soma -= arabico[i+1];
-      console.log(`temp ${soma}`);
+      return acc + atual;
     }
-  }
+  }, 0);
 }
 
-entrada("XLVII");
-// console.log(entrada("CDXXXVIII"));
-// console.log(entrada("CMIX"));
-// console.log(entrada("MMMCMXCIX"));
+console.log(entrada("XLVII"));
+console.log(entrada("CDXXXVIII"));
+console.log(entrada("CMIX"));
+console.log(entrada("MMMCMXCIX"));
